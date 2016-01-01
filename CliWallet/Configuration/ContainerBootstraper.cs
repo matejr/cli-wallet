@@ -21,7 +21,7 @@ namespace CliWallet.Configuration
             var section = (WalletConfigurationSection)ConfigurationManager.GetSection("wallet");
 
             container.RegisterType<IRippleRestClient, RippleRestClient>(new InjectionConstructor(section.RippleRestServer));
-            container.RegisterInstance<IAccountAndPasswordProvider>(section);
+            container.RegisterInstance<IAccountProvider>(section);
             container.RegisterInstance<IAccountAndSecretProvider>(section);
 
             RegisterCommands(container);

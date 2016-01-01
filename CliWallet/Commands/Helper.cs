@@ -15,7 +15,7 @@ namespace CliWallet.Commands
         /// <param name="args"></param>
         /// <param name="defaultAccountProvider"></param>
         /// <returns></returns>
-        public static string ParseAccountOrDefault(string[] args, IAccountAndPasswordProvider defaultAccountProvider)
+        public static string ParseAccountOrDefault(string[] args, IAccountProvider defaultAccountProvider)
         {
             if (args.Length == 0)
                 return defaultAccountProvider.Account;

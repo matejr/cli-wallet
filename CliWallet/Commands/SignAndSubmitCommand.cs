@@ -14,9 +14,9 @@ namespace CliWallet.Commands
     public class SignAndSubmitCommand : ICommand
     {
         IRippleRestClient client;
-        IAccountAndPasswordProvider defaultAccountAndPasswordProvider;
+        IAccountProvider defaultAccountAndPasswordProvider;
 
-        public SignAndSubmitCommand(IRippleRestClient client, IAccountAndPasswordProvider defaultAccountAndPasswordProvider)
+        public SignAndSubmitCommand(IRippleRestClient client, IAccountProvider defaultAccountAndPasswordProvider)
         {
             this.client = client;
             this.defaultAccountAndPasswordProvider = defaultAccountAndPasswordProvider;

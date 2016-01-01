@@ -13,9 +13,9 @@ namespace CliWallet.Commands
     public class GetTrustlinesCommand : ICommand
     {
         IRippleRestClient client;
-        IAccountAndPasswordProvider defaultAccountProvider;
+        IAccountProvider defaultAccountProvider;
 
-        public GetTrustlinesCommand(IRippleRestClient client, IAccountAndPasswordProvider defaultAccountProvider)
+        public GetTrustlinesCommand(IRippleRestClient client, IAccountProvider defaultAccountProvider)
         {
             this.client = client;
             this.defaultAccountProvider = defaultAccountProvider;

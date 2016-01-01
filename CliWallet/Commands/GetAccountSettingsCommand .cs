@@ -14,9 +14,9 @@ namespace CliWallet.Commands
     public class GetAccountSettingsCommand : ICommand
     {
         IRippleRestClient client;
-        IAccountAndPasswordProvider defaultAccountProvider;
+        IAccountProvider defaultAccountProvider;
 
-        public GetAccountSettingsCommand(IRippleRestClient client, IAccountAndPasswordProvider defaultAccountProvider)
+        public GetAccountSettingsCommand(IRippleRestClient client, IAccountProvider defaultAccountProvider)
         {
             this.client = client;
             this.defaultAccountProvider = defaultAccountProvider;

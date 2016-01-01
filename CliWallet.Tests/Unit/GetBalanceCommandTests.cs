@@ -13,7 +13,7 @@ namespace CliWallet.Tests.Unit
     public class GetBalanceCommandTests
     {
         string defaultAccount = "rh8PUKX8gqjiFTr2vTpZQuzc362zyp1Ekb";
-        Mock<IAccountAndPasswordProvider> accountProviderMock;
+        Mock<IAccountProvider> accountProviderMock;
         Mock<IRippleRestClient> clientMock;
         StringWriter output;
         StringWriter errorOutput;
@@ -21,7 +21,7 @@ namespace CliWallet.Tests.Unit
         [TestInitialize]
         public void TestInitialize()
         {
-            accountProviderMock = new Mock<IAccountAndPasswordProvider>();
+            accountProviderMock = new Mock<IAccountProvider>();
             accountProviderMock.SetupGet(p => p.Account).Returns(defaultAccount);
 
             clientMock = new Mock<IRippleRestClient>(MockBehavior.Strict);

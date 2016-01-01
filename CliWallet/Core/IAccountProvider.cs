@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CliWallet
 {
-    public interface IAccountAndPasswordProvider
+    public interface IAccountProvider
     {
         string Account { get; }
     }

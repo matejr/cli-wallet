@@ -14,9 +14,9 @@ namespace CliWallet.Commands
     public class GetBalanceCommand : ICommand
     {
         IRippleRestClient client;
-        IAccountAndPasswordProvider defaultAccountProvider;
+        IAccountProvider defaultAccountProvider;
 
-        public GetBalanceCommand(IRippleRestClient client, IAccountAndPasswordProvider defaultAccountProvider)
+        public GetBalanceCommand(IRippleRestClient client, IAccountProvider defaultAccountProvider)
         {
             this.client = client;
             this.defaultAccountProvider = defaultAccountProvider;
