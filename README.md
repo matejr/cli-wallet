@@ -5,7 +5,7 @@ This repository contains the following projects:
 * CliWallet - proof-of-concept command-line Ripple wallet (partially implemented)
 * CliWallet.RippleRest - Ripple-REST client library (partially implemented)
 * CliWallet.Tests - some unit tests for CliWallet
-* CliWallet.RippleRest.Test - unit, integration and acceptance tests for Ripple-REST client.
+* CliWallet.RippleRest.Tests - unit, integration and acceptance tests for Ripple-REST client.
 
 ## Warning
 Very important: [Ripple-REST development has stopped](https://github.com/ripple/ripple-rest).
