@@ -11,7 +11,7 @@ This repository contains the following projects:
 Very important: [Ripple-REST development has stopped](https://github.com/ripple/ripple-rest).
 
 ## Configuration
-See file wallet.config (app.config before compilation).
+See file wallet.exe.config (app.config before compilation).
 
 ## Examples
 
